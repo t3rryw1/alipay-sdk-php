@@ -3,7 +3,7 @@
  * ALIPAY API: alipay.open.agent.zhimabrief.sign request
  *
  * @author auto create
- * @since 1.0, 2018-01-31 21:21:06
+ * @since 1.0, 2018-07-19 18:25:00
  */
 class AlipayOpenAgentZhimabriefSignRequest
 {
@@ -28,7 +28,7 @@ class AlipayOpenAgentZhimabriefSignRequest
 	private $batchNo;
 	
 	/** 
-	 * 营业执照授权函图片，个体工商户如果使用总公司或其他公司的营业执照认证需上传该授权函图片，最小50KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 * 营业执照授权函图片，个体工商户如果使用总公司或其他公司的营业执照认证需上传该授权函图片，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 **/
 	private $businessLicenseAuthPic;
 	
@@ -38,7 +38,7 @@ class AlipayOpenAgentZhimabriefSignRequest
 	private $businessLicenseNo;
 	
 	/** 
-	 * 营业执照图片，最小50KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 * 营业执照图片，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 **/
 	private $businessLicensePic;
 	
@@ -63,7 +63,7 @@ class AlipayOpenAgentZhimabriefSignRequest
 	private $enterpriseAlias;
 	
 	/** 
-	 * 企业LOGO-图片，最小50KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 * 企业LOGO-图片，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 **/
 	private $enterpriseLogo;
 	
@@ -92,7 +92,7 @@ class AlipayOpenAgentZhimabriefSignRequest
 	/** 
 	 * 企业特殊资质图片，可参考
 <a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.59bgD2&treeId=222&articleId=105364&docType=1#s1
-">商家经营类目</a> 中的“需要的特殊资质证书”，最小50KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+">商家经营类目</a> 中的“需要的特殊资质证书”，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 **/
 	private $specialLicensePic;
 	
