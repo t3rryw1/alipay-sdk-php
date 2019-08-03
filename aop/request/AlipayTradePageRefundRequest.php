@@ -1,14 +1,14 @@
 <?php
 /**
- * ALIPAY API: alipay.security.test.query request
+ * ALIPAY API: alipay.trade.page.refund request
  *
  * @author auto create
- * @since 1.0, 2019-02-21 14:25:00
+ * @since 1.0, 2019-06-19 11:35:01
  */
-class AlipaySecurityTestQueryRequest
+class AlipayTradePageRefundRequest
 {
 	/** 
-	 * 预发验证openapi内部
+	 * 统一收单退款页面接口
 	 **/
 	private $bizContent;
 
@@ -35,7 +35,7 @@ class AlipaySecurityTestQueryRequest
 
 	public function getApiMethodName()
 	{
-		return "alipay.security.test.query";
+		return "alipay.trade.page.refund";
 	}
 
 	public function setNotifyUrl($notifyUrl)

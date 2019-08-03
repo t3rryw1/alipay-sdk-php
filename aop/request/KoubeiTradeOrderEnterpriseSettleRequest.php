@@ -3,7 +3,7 @@
  * ALIPAY API: koubei.trade.order.enterprise.settle request
  *
  * @author auto create
- * @since 1.0, 2019-03-27 17:14:30
+ * @since 1.0, 2019-03-29 18:50:02
  */
 class KoubeiTradeOrderEnterpriseSettleRequest
 {

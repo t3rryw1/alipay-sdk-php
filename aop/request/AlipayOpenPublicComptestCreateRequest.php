@@ -3,7 +3,7 @@
  * ALIPAY API: alipay.open.public.comptest.create request
  *
  * @author auto create
- * @since 1.0, 2019-03-13 18:25:00
+ * @since 1.0, 2019-06-16 12:16:25
  */
 class AlipayOpenPublicComptestCreateRequest
 {

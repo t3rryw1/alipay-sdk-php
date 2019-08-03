@@ -272,10 +272,11 @@ class AopClient {
     /**
      * 生成用于调用收银台SDK的字符串
      * @param $request SDK接口的请求参数对象
+     * @param $appAuthToken 三方应用授权token
      * @return string 
      * @author guofa.tgf
      */
-	public function sdkExecute($request) {
+	public function sdkExecute($request, $appAuthToken = null) {
 		
 		$this->setupCharsets($request);
 
@@ -294,6 +295,8 @@ class AopClient {
 			$params['notify_url'] = $notify_url;
 		}
 
+		$params['app_auth_token'] = $appAuthToken;
+
 		$dict = $request->getApiParas();
 		$params['biz_content'] = $dict['biz_content'];
 
@@ -308,13 +311,15 @@ class AopClient {
 		return http_build_query($params);
 	}
 
-	/*
-		页面提交执行方法
-		@param：跳转类接口的request; $httpmethod 提交方式。两个值可选：post、get
-		@return：构建好的、签名后的最终跳转URL（GET）或String形式的form（POST）
-		auther:笙默
-	*/
-	public function pageExecute($request,$httpmethod = "POST") {
+    /**
+     * 页面提交执行方法
+     * @param $request 跳转类接口的request
+     * @param string $httpmethod 提交方式,两个值可选：post、get;
+     * @param null $appAuthToken 三方应用授权token
+     * @return 构建好的、签名后的最终跳转URL（GET）或String形式的form（POST）
+     * @throws Exception
+     */
+	public function pageExecute($request, $httpmethod = "POST", $appAuthToken = null) {
 
 		$this->setupCharsets($request);
 
@@ -346,6 +351,7 @@ class AopClient {
 		$sysParams["notify_url"] = $request->getNotifyUrl();
 		$sysParams["return_url"] = $request->getReturnUrl();
 		$sysParams["charset"] = $this->postCharset;
+		$sysParams["app_auth_token"] = $appAuthToken;
 
 		//获取业务参数
 		$apiParams = $request->getApiParas();

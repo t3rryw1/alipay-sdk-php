@@ -3,7 +3,7 @@
  * ALIPAY API: alipay.marketing.card.template.create request
  *
  * @author auto create
- * @since 1.0, 2019-03-17 15:24:23
+ * @since 1.0, 2019-06-27 19:15:01
  */
 class AlipayMarketingCardTemplateCreateRequest
 {

@@ -1,14 +1,14 @@
 <?php
 /**
- * ALIPAY API: alipay.security.prod.aa.bb.query request
+ * ALIPAY API: zhima.credit.ep.scene.agreement.use request
  *
  * @author auto create
- * @since 1.0, 2019-01-16 20:10:01
+ * @since 1.0, 2019-05-14 11:16:11
  */
-class AlipaySecurityProdAaBbQueryRequest
+class ZhimaCreditEpSceneAgreementUseRequest
 {
 	/** 
-	 * 预发新老版本对齐测试
+	 * 加入信用服务
 	 **/
 	private $bizContent;
 
@@ -35,7 +35,7 @@ class AlipaySecurityProdAaBbQueryRequest
 
 	public function getApiMethodName()
 	{
-		return "alipay.security.prod.aa.bb.query";
+		return "zhima.credit.ep.scene.agreement.use";
 	}
 
 	public function setNotifyUrl($notifyUrl)

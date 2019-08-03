@@ -3,12 +3,12 @@
  * ALIPAY API: alipay.open.agent.offlinepayment.sign request
  *
  * @author auto create
- * @since 1.0, 2019-03-26 21:45:00
+ * @since 1.0, 2019-06-21 21:35:01
  */
 class AlipayOpenAgentOfflinepaymentSignRequest
 {
 	/** 
-	 * 代商户操作事务编号，通过alipay.open.isv.agent.create接口进行创建。
+	 * 代商户操作事务编号，通过alipay.open.agent.create接口进行创建。
 	 **/
 	private $batchNo;
 	

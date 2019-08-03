@@ -1,14 +1,14 @@
 <?php
 /**
- * ALIPAY API: alipay.marketing.campaign.discount.operate request
+ * ALIPAY API: alipay.eco.mycar.parking.spaceinfo.sync request
  *
  * @author auto create
- * @since 1.0, 2019-02-22 17:05:04
+ * @since 1.0, 2019-05-25 15:30:01
  */
-class AlipayMarketingCampaignDiscountOperateRequest
+class AlipayEcoMycarParkingSpaceinfoSyncRequest
 {
 	/** 
-	 * 支付宝营销优惠立减活动操作
+	 * 停车场车位信息同步
 	 **/
 	private $bizContent;
 
@@ -35,7 +35,7 @@ class AlipayMarketingCampaignDiscountOperateRequest
 
 	public function getApiMethodName()
 	{
-		return "alipay.marketing.campaign.discount.operate";
+		return "alipay.eco.mycar.parking.spaceinfo.sync";
 	}
 
 	public function setNotifyUrl($notifyUrl)
