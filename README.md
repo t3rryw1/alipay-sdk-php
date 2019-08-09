@@ -66,7 +66,7 @@
 1. Composer 安装。
 
     ```bash
-    composer require wi1dcard/alipay-sdk
+    composer require t3rryw1/alipay-sdk
     ```
 
 2. 创建 `AlipayKeyPair` 实例。
@@ -83,7 +83,7 @@
 3. 创建 `AopClient` 实例。
 
     ```php
-    $aop = new \Alipay\AopClient('APP_ID', $keyPair);
+    $aop = new \Alipay\AopClient('APP_ID', $keyPair,true);
     ```
 
     `AopClient` 通常情况会贯穿整条业务，除非你须要在同一套代码内处理多个商户号/小程序，否则只需在初始化阶段创建一次即可。
